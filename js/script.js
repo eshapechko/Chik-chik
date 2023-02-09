@@ -58,14 +58,16 @@ const startSlider = () => {
     btnNextSlide.addEventListener("click", nextSlide);
 
     window.addEventListener("resize", () => {
-        if (activeSlide + 2 > sliderItems.length && document.documentElement.offsetWidth > 560) {
-            activeSlide = sliderItems.length - 2;
-            sliderItems[activeSlide]?.classList.add("slider__item_active");
-        }
+        setTimeout(() => {
+            if (activeSlide + 2 > sliderItems.length && document.documentElement.offsetWidth > 560) {
+                activeSlide = sliderItems.length - 2;
+                sliderItems[activeSlide]?.classList.add("slider__item_active");
+            }
 
-        position = -sliderItems[0].clientWidth * (activeSlide - 1);
-        sliderList.style.transform = `translateX(${position}px)`;
-        checkSlider();
+            position = -sliderItems[0].clientWidth * (activeSlide - 1);
+            sliderList.style.transform = `translateX(${position}px)`;
+            checkSlider();
+        }, 100);
     });
 };
 

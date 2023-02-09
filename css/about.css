@@ -7,12 +7,12 @@
     font-size: 40px;
     text-transform: uppercase;
     max-width: 700px;
-    margin-bottom: 00 24px;
+    margin: 0 0 24px;
 }
 .about__description {
     line-height: 150%;
     max-width: 700px;
-    margin-bottom: 00 72px;
+    margin: 0 0 72px;
 }
 .about__list {
     margin: 0;
@@ -118,5 +118,9 @@
         padding-left: 72px;
         background-size: 64px;
         min-height: 64px;
+    }
+
+    .about__item-description {
+        font-size: 12px;
     }
 }

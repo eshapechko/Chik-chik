@@ -24,7 +24,7 @@
 }
 
 .reserve__form-container {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 }
 
 .reserve__fieldset {
@@ -33,7 +33,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 72px;
-    gap: 8px;
+    column-gap: 8px;
 }
 
 .reserve__legend {
